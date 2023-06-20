@@ -1,6 +1,106 @@
+<AM I Responsive overlay: https://ui.dev/amiresponsive>
+
+
+## Table of contents
+- [Django Bakery Introduction](#django-bakery-introduction)
+  - Nested List Item                                          
+- [UX](#ux)
+  - Agile Methologies
+  - User Stories (epic > >)
+  - Wireframes
+  - Database design
+- [Technologies](#technologies) 
+  - Languages
+   -  
+- [Features](#features)
+- [Testing](#testing)
+- [Deployment](#deployment)
+  - [Elephant SQL](#elephant-sql)
+  - [Cloudinary](#cloudinary)
+  - [Heroku](#heroku) 
+  - [Forking with GitHub](#forking-with-github)
+  - [Cloning with GitHub](#cloning-with-github)
+- Fourth Item
+- [Credits](#credits)
+
+
+
+## Django Bakery Introduction
+Django bakery is a website for lovers of baked goods to share their recipies and leave feedback to other contributors.
+With a registered account users can like, submit, edit and delete posts. 
+The live website can be accessed here <link>
+
+## UX
+
+## Technologies
+
+## Features
+
+## Testing
+
+## Deployment
+
+### Elephant SQL
+
+Elephant SQL was used to host postgres databases and linked with Heroku:
+
+1. Create an Elephant SQL account and login via elephantsql.com.
+2. Select 'Create new instance' and choose the free plan 'Tiny Turtle'.
+3. Select data center region closest to your geographical location.
+4. Select 'Review' and if details are satisfactory select 'Create Instance'.
+5. Select the newly created instance and open 'Details' section
+6. Copy the postgres URL for this instance for later use with Heroku deployment.
+
+### Cloudinary 
+
+Cloudinary platform was used to host static files and media.
+
+1. To create a Cloudinary account navigate to cloudinary.com.
+2. Select 'Sign up for Free' and choose sign up option.
+3. Select 'Create Account'.
+4. From Cloudinary Dashboard copy 'API Environmental Variable' for later use with Heroku deployment.
+
+### Heroku
+
+Django Bakery was deployed to Heroku as per the below steps:
+1. Create a Heroku account and login via id.heroku.com/login.
+2. From 'Dashsboard' select 'New' and 'Create new app'.
+3. Choose a name for the app and select region (Europe/United States).
+4. Select 'Create app'.
+5. To apply settings select the "Settings" button.
+6. Select "Reveal Config Vars".
+7. Add a Key called 'DATABASE_URL' and for the value enter the URL copied from elephantsql.com (Elephant SQL, step: 6.).
+8. Add a Key called 'SECRET_KEY' and enter your choise of secret key value.
+9. Add a Key called 'CLOUDINARY_URL' and for the value enter the 'API Environmental Variable' copied from cloudinary.com (Cloudinary, step: 4.).
+10. Add a key called 'PORT' with a value of '8000'.
+11. From the 'Deployment' tab select 'GitHub' in the 'Deployment method' section. Select 'Connect to GitHub' at the bottom of the page.
+12. In the search field search for your GitHub repository name.
+13. Select 'Connect' to link up with the GitHub repository.
+14. Further down the page select deployment method automatic ('Enable Automatic Deploys') or manual ('Deploy branch').
+
+### Forking with GitHub
+1. Open [GitHub](https://github.com).
+2. Navigate to the intended repository.
+3. Select "Fork" in the top rigth corner of the page.
+4. Select the owner of the fork repository in the drop menu provided.
+5. Select the "Create Fork" button.
+6. Your copy of the original repository has been created.
+
+### Cloning with GitHub
+1. Open [GitHub](https://github.com).
+2. Navigate to the intended repository.
+3. Select the "Code" button on the top of the repository page.
+4. Select the copy button for one of the three options: "HTTPS", "SSH" or "GitHub CLI".
+5. Open Terminal (or command line tool) on your local computer.
+6. In Terminal change the current working directory to the directory where the clone will reside.
+7. In Terminal type: "git clone" followed by a space. Paste the URL copied in (step 4.).
+8. In Terminal press "Enter"/"Return" to create a local copy of the repository on your computer.
+
+## Credits
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome USER_NAME,
+Welcome sven-cork,
 
 This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
@@ -106,3 +206,5 @@ Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` f
 ---
 
 Happy coding!
+
+### Django Bakery - Introduction
