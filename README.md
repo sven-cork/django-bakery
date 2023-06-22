@@ -5,9 +5,12 @@
 - [Django Bakery Introduction](#django-bakery-introduction)
   - Nested List Item                                          
 - [UX](#ux)
-  - Agile Methologies
-  - User Stories (epic > >)
-  - Wireframes
+  - Agile Methodology
+  - [User Stories](#user_stories)
+  - [Wireframes](#wireframes)
+    - [Home](#home)
+    - [My Delights](#my-delights)
+    - [Add Recipie](#add-recipie)
   - Database design
 - [Technologies](#technologies) 
   - Languages
@@ -31,6 +34,20 @@ With a registered account users can like, submit, edit and delete posts.
 The live website can be accessed here <link>
 
 ## UX
+### Agile Methodology
+
+### User Stories
+
+### Wireframes
+
+#### Home
+![Home overview](/static/images/wireframe_django_home.png)
+
+#### My Delights
+![My Delights](/static/images/wireframe_my_delights.png)
+
+#### Add Recipie
+![My Delights](/static/images/wireframe_add_recipie.png)
 
 ## Technologies
 
