@@ -39,14 +39,13 @@ The live website can be accessed here <link>
 ### User Stories
 
 ### Wireframes
-
-#### Home
+  #### Home
 ![Home overview](/static/images/wireframe_django_home.png)
 
-#### My Delights
+  #### My Delights
 ![My Delights](/static/images/wireframe_my_delights.png)
 
-#### Add Recipie
+  #### Add Recipie
 ![My Delights](/static/images/wireframe_add_recipie.png)
 
 ## Technologies
