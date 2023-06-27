@@ -11,6 +11,7 @@
     - [Home](#home)
     - [My Delights](#my-delights)
     - [Add Recipie](#add-recipie)
+    - [Login/Register](#login/register)
   - Database design
 - [Technologies](#technologies) 
   - Languages
@@ -25,6 +26,7 @@
   - [Cloning with GitHub](#cloning-with-github)
 - Fourth Item
 - [Credits](#credits)
+   - [Image Credits](#image-credits)
 
 
 
@@ -46,7 +48,10 @@ The live website can be accessed here <link>
 ![My Delights](/static/images/wireframe_my_delights.png)
 
   #### Add Recipie
-![My Delights](/static/images/wireframe_add_recipie.png)
+![Add recipie](/static/images/wireframe_add_recipie.png)
+
+  #### Login/Register
+![Add recipie](/static/images/wireframe_login.png)
 
 ## Technologies
 
@@ -114,6 +119,23 @@ Django Bakery was deployed to Heroku as per the below steps:
 
 ## Credits
 
+### Image Credits
+  - Strawberry Cake ingredient cover image by [chandlervid85](https://www.freepik.com/free-ai-image/victoria-sponge-cake-isolated-white-background-traditional-london-dessert-ai-generative_43227755.htm#query=strawberry%20cake&position=0&from_view=search&track=ais_ai_generated) on freepik
+  - Cinnamon Bun ingredient cover image by [vecstock](https://www.freepik.com/free-ai-image/homemade-baked-dessert-sweet-indulgence-plate-generated-by-ai_41477028.htm#query=cinnamon%20bun&position=1&from_view=search&track=ais_ai_generated) on freepik
+  - Danish Pastry ingredient cover image by [vecstock](https://www.freepik.com/free-ai-image/sweet-lemon-slice-gourmet-dessert-plate-generated-by-ai_41307759.htm#query=danish%20pastry&position=4&from_view=search&track=ais_ai_generated) on freepik
+  - Cheese Cake ingredient cover image by [chandlervid85](https://www.freepik.com/free-ai-image/homemade-cheesecake-with-fresh-berries-dessert-white-background-ai-generative_43227680.htm#query=Cheese%20Cake&position=2&from_view=search&track=ais_ai_generated) on freepik
+  - Chocolate Cake ingredient cover image by [stockgiu](https://www.freepik.com/free-ai-image/fresh-raspberry-chocolate-brownie-rustic-wood-plate-generated-by-ai_43023668.htm#query=chocolate%20cake%20raspberry&position=38&from_view=search&track=ais_ai_generated) on freepik
+  - Brulee ingredient cover image by [vecstock](https://www.freepik.com/free-ai-image/gourmet-creme-brulee-with-fresh-fruit-toppings-generated-by-ai_41313132.htm#query=brulee&position=0&from_view=search&track=ais_ai_generated66) on freepik
+  - Apple Pie ingredient cover image by [vecstock](https://www.freepik.com/free-ai-image/freshly-baked-apple-pie-sweet-indulgence-generated-by-ai_42212695.htm#query=apple%20pie&position=0&from_view=search&track=ais_ai_generated) on freepik
+  - Brownie ingredient cover image by [stockgui](https://www.freepik.com/free-ai-image/dark-chocolate-brownie-stack-rustic-table-generated-by-ai_43114698.htm#query=brownie&position=5&from_view=search&track=ais_ai_generated) on freepik
+  - Pancakes ingredient cover image by [vecstock](https://www.freepik.com/free-ai-image/stacked-blueberry-pancakes-wooden-plate-with-syrup-generated-by-ai_41056581.htm#query=pancakes&position=1&from_view=search&track=sph) on freepik
+  - Trifle ingredient cover image by [vecstock](https://www.freepik.com/free-ai-image/fresh-fruit-parfait-with-granola-yogurt-generated-by-ai_41417233.htm#query=trifle&position=3&from_view=search&track=ais_ai_generated) on freepik
+  - Tiramisu ingredient cover image by [chandlervid85](https://www.freepik.com/free-ai-image/portion-gourmet-tiramisu-italian-dessert-served-plate-gray-table-side-view-ai-generative_43227653.htm#query=Tiramisu&position=1&from_view=search&track=ais_ai_generated) on freepik
+  - Muffins ingredient cover image by [freepik](https://www.freepik.com/free-ai-image/gold-elements-birthday-party-cake_42088624.htm#query=muffins&position=19&from_view=search&track=ais_ai_generated) on freepik
+  - Eaton Mess ingredient cover image by [chandlervid85](https://www.freepik.com/free-ai-image/pavlova-cake-with-fresh-berry-topping-layers-whipped-cream-meringue-isolated-white-backgroundai-generative_43227483.htm#query=Strawberries%20cream&position=36&from_view=search&track=ais_ai_generated) on freepik
+  - Berry Cake ingredient cover image by [vecstock](https://www.freepik.com/free-ai-image/cake-with-berries-it_40996334.htm#query=cake%20with%20cream&position=5&from_view=search&track=ais_ai_generated) on freepik
+
+   
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome sven-cork,
