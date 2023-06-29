@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-bakery-79fee6bf117c.herokuapp.com', 'localhost', '8000-svencork-djangobakery-ueorlxlqytk.ws-eu100.gitpod.io']
+ALLOWED_HOSTS = ['django-bakery-79fee6bf117c.herokuapp.com', 'localhost', '8000-svencork-djangobakery-ueorlxlqytk.ws-eu101.gitpod.io']
 
 
 # Application definition

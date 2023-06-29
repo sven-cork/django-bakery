@@ -50,6 +50,7 @@ class Recipies(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE, 
                                related_name="recipie_posts")
     title = models.CharField(max_length=200, unique=True)
+    created_on = models.DateTimeField(auto_now_add=True)
     created_date = models.DateTimeField(auto_now_add=True)
     updated_date = models.DateTimeField(auto_now=True)
     content = models.TextField()
@@ -58,6 +59,9 @@ class Recipies(models.Model):
         User, related_name='recipie_likes', blank=True)
     slug = models.SlugField(max_length=200, unique=True)
     status = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ["-created_on"]
 
     def __str__(self):
         return self.title
@@ -75,9 +79,11 @@ class Comment(models.Model):
                                 related_name='comments')
     name = models.CharField(max_length=80)
     email = models.EmailField()
-    content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
-
+    content = models.TextField()
+    approved = models.BooleanField(default=False)
+    created_on = models.DateTimeField(auto_now_add=True)
+    
     class Meta:
         ordering = ["created_on"]
 
