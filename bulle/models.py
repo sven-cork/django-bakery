@@ -58,7 +58,7 @@ class Recipies(models.Model):
     likes = models.ManyToManyField(
         User, related_name='recipie_likes', blank=True)
     slug = models.SlugField(max_length=200, unique=True)
-    status = models.DateTimeField(auto_now_add=True)
+    status = models.IntegerField(choices=STATUS, default=0)
 
     class Meta:
         ordering = ["-created_on"]
