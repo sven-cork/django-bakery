@@ -134,6 +134,7 @@ Django Bakery was deployed to Heroku as per the below steps:
   - Muffins ingredient cover image by [freepik](https://www.freepik.com/free-ai-image/gold-elements-birthday-party-cake_42088624.htm#query=muffins&position=19&from_view=search&track=ais_ai_generated) on freepik
   - Eaton Mess ingredient cover image by [chandlervid85](https://www.freepik.com/free-ai-image/pavlova-cake-with-fresh-berry-topping-layers-whipped-cream-meringue-isolated-white-backgroundai-generative_43227483.htm#query=Strawberries%20cream&position=36&from_view=search&track=ais_ai_generated) on freepik
   - Berry Cake ingredient cover image by [vecstock](https://www.freepik.com/free-ai-image/cake-with-berries-it_40996334.htm#query=cake%20with%20cream&position=5&from_view=search&track=ais_ai_generated) on freepik
+  - Default picture cover image by [Antonio Quagliata](https://www.pexels.com/photo/happiness-is-a-piece-of-cake-close-up-photography-227432/) on Pexels
 
    
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
