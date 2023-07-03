@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
 from .models import Recipies
+from .forms import CommentForm
 
 
 class RecipieList(generic.ListView):
@@ -26,7 +27,8 @@ class RecipieDetail(View):
             {
                 "recipie": recipie,
                 "comments": comments,
-                "liked": liked
+                "liked": liked,
+                "comment_form": CommentForm()
             },
             
         )
