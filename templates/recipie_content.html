@@ -10,7 +10,7 @@
                 <h1 class="post-title">
                 </h1>
                 <!-- Post author goes before the | the post's created date goes after -->
-                <p class="post-subtitle"> {{ recipie.author }} | {{ recipie.created_on }} </p>
+                <p class="post-subtitle"> {{ recipie.name }} | {{ recipie.created_on }} </p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!-- The featured image URL goes in the src attribute -->
@@ -18,7 +18,7 @@
                 <img src="https://res.cloudinary.com/dwxoyt0qz/image/upload/
                 v1688292295/pexels-antonio-quagliata-227432_nwslyq.jpg" width="100%">
                 {% else %}
-                <img src=" {{ recipie.featured_image }} " width="100%">
+                <img src=" {{ recipie.featured_image.url }} " width="100%">
                 {% endif %}
             </div>
         </div>
@@ -36,8 +36,31 @@
                 <div class="row">
 
                     <div class="col-1">
+                        <strong>
+                            {% if user.is_authenticated %}
+                            <form class="d-inline" action="{% url 'recipie_like' recipie.slug %}" method="POST">
+                                {% csrf_token %}
+                            
+                                {% if liked %}
+                                <button type="submit" name="blogpost_id" value="{{recipie.slug}}" class="btn-like"><i 
+                                        class="fas fa-heart"></i></button>
+                            
+                                {% else %}
+                                <button type="submit" name="blogpost_id" value="{{recipie.slug}}" class="btn-like"><i 
+                                        class="far fa-heart"></i></button>
+                            
+                                {% endif %}
+
+                            </form>
+                            {% else %}
+                            <span class="text-secondary"><i class="far fa-heart"></i></span>
+
+                            {% endif %}
+
+                        
                         <!-- The number of likes goes before the closing strong tag -->
-                        <strong class="text-secondary"><i class="far fa-heart"></i> {{ recipie.number_of_likes }} </strong>
+                        <span class="text-secondary">{{ post.number_of_likes }} </span>
+                        </strong>
                     </div>
                     <div class="col-1">
                         {% with comments.count as total_comments %}
@@ -65,7 +88,7 @@
                 <div class="comments" style="padding: 10px;">
                     <p class="font-weight-bold">
                         <!-- The commenter's name goes here. Check the model if you're not sure what that is -->
-                        {{ comment.author }}
+                        {{ comment.name }}
                         <span class=" text-muted font-weight-normal">
                             <!-- The comment's created date goes here -->
                             {{ comment.created_on }}
@@ -81,6 +104,12 @@
         <div class="col-md-4 card mb-4  mt-3 ">
             <div class="card-body">
                 <!-- For later -->
+                {% if commented %}
+                <div class="alert alert_success" role="alert">
+                    Your comment is awaiting approval
+                </div>
+                {% else %}
+
                 {% if user.is_authenticated %}
 
                 <h3>Leave a comment:</h3>
@@ -90,6 +119,7 @@
                     {% csrf_token %}
                     <button type="submit" class="btn btn-signup btn-lg">Submit</button>
                 </form>
+                {% endif %}
                 {% endif %}
 
             </div>

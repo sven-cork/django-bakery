@@ -69,6 +69,9 @@ class Recipies(models.Model):
     def number_of_likes(self):
         return self.likes.count()
     
+    def number_of_comments(self):
+        return self.comments.count()
+    
     def get_absolute_url(self):
         return reverse("recipie_detail",  kwargs={"slug": self.slug})
 
@@ -82,12 +85,15 @@ class Comment(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     content = models.TextField()
     approved = models.BooleanField(default=False)
-    created_on = models.DateTimeField(auto_now_add=True)
     
     class Meta:
         ordering = ["created_on"]
 
     def __str__(self):
         return f"Comment {self.content} by {self.name}"
+
+    
+
+    
 
 
