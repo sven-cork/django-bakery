@@ -50,6 +50,7 @@ class Recipies(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE, 
                                related_name="recipie_posts")
     title = models.CharField(max_length=200, unique=True)
+    category = models.CharField(max_length=15, choices=bake_category)
     created_on = models.DateTimeField(auto_now_add=True)
     created_date = models.DateTimeField(auto_now_add=True)
     updated_date = models.DateTimeField(auto_now=True)

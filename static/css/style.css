@@ -140,3 +140,23 @@ body {
     background: transparent;
     border: none;
 }
+
+.icon-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-text-container {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.flex-item {
+    margin: 0 10px;
+}
