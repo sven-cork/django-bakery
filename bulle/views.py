@@ -16,9 +16,21 @@ class RecipieList(generic.ListView):
     template_name = "index.html"
     paginate_by = 9
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['bake_category_cover'] = Recipies.bake_category_cover
+        return context
+
+    def get_queryset(self):
+        category = self.request.GET.get('category')
+        if category:
+            queryset = self.queryset.filter(category=category)
+        else:
+            queryset = self.queryset
+        return queryset
+
 
 class RecipieDetail(View):
-
     def get(self, request, slug, *args, **kwargs):
         queryset = Recipies.objects.filter(status=1)
         recipie = get_object_or_404(queryset, slug=slug)
@@ -35,9 +47,8 @@ class RecipieDetail(View):
                 "comments": comments,
                 "commented": False,
                 "liked": liked,
-                "comment_form": CommentForm()
+                "comment_form": CommentForm(),
             },
-            
         )
     
     def post(self, request, slug, *args, **kwargs):
@@ -93,13 +104,15 @@ class AddRecipie(SuccessMessageMixin, LoginRequiredMixin, CreateView):
     template_name = 'addrecipie.html'
     success_url = reverse_lazy('home')
     form_class = RecipieForm
-    success_message = 'Post awaiting approval'
 
     def form_valid(self, form):
         if self.request.POST.get('status'):
             form.instance.status = int(self.request.POST.get('status'))
         form.instance.author = self.request.user
+
+        messages.success(self.request, 'Recipe added successfully.')
         return super().form_valid(form)
+
 
 
 class UpdateRecipie(SuccessMessageMixin, LoginRequiredMixin, UpdateView):
@@ -109,11 +122,12 @@ class UpdateRecipie(SuccessMessageMixin, LoginRequiredMixin, UpdateView):
     success_url = reverse_lazy('home')
     success_message = 'Your recepie was successfully updated!'
 
+
 def delete_recipie(request, recipie_id):
     recipie = get_object_or_404(Recipies, id=recipie_id)
     if recipie.author == request.user:    
         recipie.delete()
-        messages.info(request, "Recipie successfully deleted.")
+        messages.success(request, "Recipie successfully deleted.")
     else:
         messages.error(request, "Unable to delete recipie.")
     return redirect('/')
