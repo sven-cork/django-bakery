@@ -114,7 +114,6 @@ class AddRecipie(SuccessMessageMixin, LoginRequiredMixin, CreateView):
         return super().form_valid(form)
 
 
-
 class UpdateRecipie(SuccessMessageMixin, LoginRequiredMixin, UpdateView):
     model = Recipies
     form_class = RecipieForm

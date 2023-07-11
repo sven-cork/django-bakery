@@ -11,13 +11,19 @@
     - [Home](#home)
     - [My Delights](#my-delights)
     - [Add Recipie](#add-recipie)
-    - [Login/Register](#login/register)
+    - [Login and Register](#login-and-register)
   - Database design
 - [Technologies](#technologies) 
   - Languages
    -  
 - [Features](#features)
+
 - [Testing](#testing)
+  - [Manual Test Cases](#manual-test-cases)
+
+- [Validation](#validation)
+  - [HTML, CSS and Python validation](#html-css-and-python-validation)
+
 - [Deployment](#deployment)
   - [Elephant SQL](#elephant-sql)
   - [Cloudinary](#cloudinary)
@@ -51,14 +57,16 @@ The live website can be accessed here <link>
   #### Add Recipie
 ![Add recipie](/static/images/wireframe_add_recipie.png)
 
-  #### Login/Register
+  #### Login and Register
 ![Add recipie](/static/images/wireframe_login.png)
 
 ## Technologies
 
 ## Features
 
-## Testing
+## Testing and Validation
+  ### Manual Test Cases
+  ### HTML, CSS and Python validation
 
 ## Deployment
 
