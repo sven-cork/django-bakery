@@ -73,7 +73,12 @@ The live website can be accessed here <link>
 
   | Action | Expected Behaviour | Pass/Fail |
   |--------|--------------------|-----------|
-  | Select "Home" in Navigation bar | Renders homepage | Pass |
+  | Select "Home" in Navigation bar | Renders Homepage | Pass |
+  | Select "Add Recipie" in Navigation bar | Renders Add Recipie page | Pass |
+  | Select "Register" in Navigation bar | Renders Register page | Pass |
+  | Select "Login" in Navigation bar | Renders Login page | Pass |
+  | Select "Logout" in Navigation bar | Renders Logout validation | Pass |
+  | Select "Sign Out" button on "Logout" page | Logs out user and renders Homepage | Pass |
 
 ## Validation and Performance
   To test 
