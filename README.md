@@ -21,8 +21,12 @@
 - [Testing](#testing)
   - [Manual Test Cases](#manual-test-cases)
 
-- [Validation](#validation)
+- [Validation and Performance](#validation-and-performance)
   - [HTML, CSS and Python validation](#html-css-and-python-validation)
+    - [Lighthouse](#lighthouse)
+    - [W3C Validation](#w3c-validation)
+    - [Python Validation](#python-validation)
+
 
 - [Deployment](#deployment)
   - [Elephant SQL](#elephant-sql)
@@ -64,9 +68,19 @@ The live website can be accessed here <link>
 
 ## Features
 
-## Testing and Validation
+## Testing
   ### Manual Test Cases
+
+  | Action | Expected Behaviour | Pass/Fail |
+  |--------|--------------------|-----------|
+  | Select "Home" in Navigation bar | Renders homepage | Pass |
+
+## Validation and Performance
+  To test 
   ### HTML, CSS and Python validation
+  ### Lighthouse
+  ### W3C Validation 
+  ### Python Validation
 
 ## Deployment
 
