@@ -5,7 +5,13 @@
 
 <head>
     <title>CodeStar Blog</title>
-
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freehand&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
@@ -24,15 +30,20 @@
 
     <!-- Navigation -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">Django Bakery</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white nav-padding">
+        <div class="container-fluid nav-background-color">
+            <a class="navbar-brand" id="logo" href="{% url 'home' %}">
+                <img class="d-inline-block align-top img-fluid" 
+                src="https://res.cloudinary.com/dwxoyt0qz/image/upload/v1689072800/apple-touch-icon_fuohpb.png" 
+                alt="Pretzel icon">      
+                 Django Bakery      
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                     </li>
@@ -52,9 +63,6 @@
                     </li>
                     {% endif %}
                 </ul>
-                <span class="navbar-text text-muted">
-                    adventures of a digital baker
-                </span>
             </div>
         </div>
     </nav>

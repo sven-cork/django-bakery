@@ -2,11 +2,45 @@ body {
     background-color: #F9FAFC;
 }
 
-.brand {
-    font-family: Lato, sans-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #4A4A4F;
+.navbar {
+    background-color: mistyrose;
+}
+
+
+.navbar-brand>img {
+    max-height: 18vh;
+    max-width: 6vh;
+}
+
+#logo {
+    font-family: 'Freehand';
+    font-size: large;
+}
+
+.nav-padding {
+    padding-bottom: 0%;
+    padding-top: 0%;
+}
+
+.hero-image {
+    height: 400px; /* Adjust the height as needed */
+    background-image: url('https://res.cloudinary.com/dwxoyt0qz/image/upload/v1688975740/django_bakery_header_rbkvfb.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px;
+  }
+
+.nav-background-color {
+    background-color: mistyrose;
+}
+ 
+.col-with-background {
+    background-color: rgb(241, 247, 249);
+  } 
+
+.solid-background {
+    background-color: aliceblue;
 }
 
 .red-o {
@@ -50,40 +84,6 @@ body {
     color: white;
     margin: 4px;
     text-transform: uppercase;
-}
-
-.masthead {
-    margin-top: 10px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    height: 33vh;
-    width: 100%;
-}
-
-.masthead-text {
-    background-color: #445261;
-    color: white;
-    position: relative;
-}
-
-.masthead-image {
-    position: relative;
-    overflow: hidden;
-}
-
-.masthead-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
 }
 
 .post-link {

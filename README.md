@@ -26,7 +26,8 @@
   - [Cloning with GitHub](#cloning-with-github)
 - Fourth Item
 - [Credits](#credits)
-   - [Image Credits](#image-credits)
+  - [Django logo, classes](#django-logo-classes)
+  - [Image Credits](#image-credits)
 
 
 
@@ -119,6 +120,13 @@ Django Bakery was deployed to Heroku as per the below steps:
 
 ## Credits
 
+### Django logo, classes
+  Inspiration for the Django logo located in navbar using favicon.io and class based approach to structure views.py is attributed to [Eleanor Bucke's project 4, "Bhawari Khana"](https://pp4.herokuapp.com/) (on GitHub: https://github.com/eleanorbucke21/PP4).
+
+### Fetch image category from database
+  Inspiration to fetch image category from database (models.py) when creating a recipie is attributed to [Tony Albanese's project 4, "BookShelf"](https://ci-project-4-bookshelf.herokuapp.com/) (on GitHub: https://github.com/tony-albanese/ci-project-4).
+
+
 ### Image Credits
   - Strawberry Cake ingredient cover image by [chandlervid85](https://www.freepik.com/free-ai-image/victoria-sponge-cake-isolated-white-background-traditional-london-dessert-ai-generative_43227755.htm#query=strawberry%20cake&position=0&from_view=search&track=ais_ai_generated) on freepik
   - Cinnamon Bun ingredient cover image by [vecstock](https://www.freepik.com/free-ai-image/homemade-baked-dessert-sweet-indulgence-plate-generated-by-ai_41477028.htm#query=cinnamon%20bun&position=1&from_view=search&track=ais_ai_generated) on freepik
@@ -135,6 +143,10 @@ Django Bakery was deployed to Heroku as per the below steps:
   - Eaton Mess ingredient cover image by [chandlervid85](https://www.freepik.com/free-ai-image/pavlova-cake-with-fresh-berry-topping-layers-whipped-cream-meringue-isolated-white-backgroundai-generative_43227483.htm#query=Strawberries%20cream&position=36&from_view=search&track=ais_ai_generated) on freepik
   - Berry Cake ingredient cover image by [vecstock](https://www.freepik.com/free-ai-image/cake-with-berries-it_40996334.htm#query=cake%20with%20cream&position=5&from_view=search&track=ais_ai_generated) on freepik
   - Default picture cover image by [Antonio Quagliata](https://www.pexels.com/photo/happiness-is-a-piece-of-cake-close-up-photography-227432/) on Pexels
+  - Gingham table cloth background image by [kjpargeter](https://www.freepik.com/free-vector/red-white-gingham-pattern_2602853.htm#query=table%20cloth&position=1&from_view=search&track=ais) on freepik
+  - Django bakery pretzel logo image by [John Sorrentino](https://favicon.io/emoji-favicons/pretzel) on favicon.io/
+
+  
 
    
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
