@@ -2,8 +2,9 @@ body {
     background-color: #F9FAFC;
 }
 
-.navbar {
+.navbar.navbar-expand-lg.navbar-light {
     background-color: mistyrose;
+    height: 70px !important;
 }
 
 .navbar-brand>img {
@@ -13,7 +14,7 @@ body {
 
 #logo {
     font-family: 'Freehand';
-    font-size: large;
+    font-size: large
 }
 
 .nav-padding {
@@ -28,7 +29,23 @@ body {
     background-size: cover;
     background-position: center;
     margin-bottom: 50px;
+    position: relative;
   }
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 
 .nav-background-color {
     background-color: mistyrose;
