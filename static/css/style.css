@@ -7,6 +7,14 @@ body {
     height: 70px !important;
 }
 
+.masthead-image {
+    margin-top: 70px;
+}
+
+.masthead-text {
+    margin-bottom: 10%;
+}
+
 .navbar-brand>img {
     max-height: 18vh;
     max-width: 6vh;
@@ -113,8 +121,8 @@ body {
 }
 
 .post-title {
-    margin-top: 20%;
-    margin-left: 5%;
+    margin-top: 10%;
+    margin-left: 0%;
 }
 
 .post-subtitle {

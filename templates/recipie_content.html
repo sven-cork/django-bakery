@@ -23,9 +23,10 @@
             <div class="card-body">
                 <div class="col-md-6 masthead-text">
                     <!-- Post title goes in these h1 tags -->
-                    {{ recipie.title }}
-                    <h1 class="post-title">
-                    </h1>
+                    
+                    <h2 class="post-title">
+                        {{ recipie.title }}
+                    </h2>
                     <!-- Post author goes before the | the post's created date goes after -->
                     <p class="post-subtitle"> {{ recipie.name }} | {{ recipie.created_on }} </p>
                 </div>
@@ -47,18 +48,18 @@
             <div class="card-footer text-center">
                 <strong>
                     {% if user.is_authenticated %}
-                    <a href="{% url 'update_recipie' recipie.slug %}" class="btn btn-secondary btn-sm"><i class="fas fa-edit"></i></a>
+                    <a href="{% url 'update_recipie' recipie.slug %}" class="btn btn-secondary btn-sm"><i class="fas fa-edit" aria-label="Edit recipie"></i></a>
 
 
                     <form class="d-inline" action="{% url 'recipie_like' recipie.slug %}" method="POST">
                         {% csrf_token %}
                     
                         {% if liked %}
-                        <button type="submit" name="blogpost_id" value="{{recipie.slug}}" class="btn-like"><i 
+                        <button type="submit" name="blogpost_id" value="{{recipie.slug}}" class="btn-like" aria-label="Submit"><i 
                                 class="fas fa-heart"></i></button>
                     
                         {% else %}
-                        <button type="submit" name="blogpost_id" value="{{recipie.slug}}" class="btn-like"><i 
+                        <button type="submit" name="blogpost_id" value="{{recipie.slug}}" class="btn-like" aria-label="Submit"><i 
                                 class="far fa-heart"></i></button>
                     
                         {% endif %}
@@ -129,7 +130,7 @@
                 <form method="post" style="margin-top: 1.3em;">
                     {{ comment_form | crispy }}
                     {% csrf_token %}
-                    <button type="submit" class="btn btn-signup btn-lg">Submit</button>
+                    <button type="submit" class="btn btn-signup btn-lg" aria-label="Submit">Submit</button>
                 </form>
                 {% endif %}
                 {% endif %}
