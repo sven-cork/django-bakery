@@ -7,7 +7,7 @@ urlpatterns = [
     path('addrecipieform/', views.AddRecipie.as_view(), name='add_recipie'),
     path('deleterecipie/<recipie_id>/', delete_recipie, name='delete_recipie'),
     path('recipies/<slug:slug>/', views.RecipieDetail.as_view(), name='recipies_content'),
-    path('like/<slug:slug>', views.RecipieLike.as_view(), name="recipie_like"),
+    path('like/<slug:slug>', views.recipie_like, name="recipie_like"),
     path('recipies/update/<slug:slug>/', views.UpdateRecipie.as_view(), name='update_recipie'),
     
 ]
