@@ -2,95 +2,94 @@
 {% block content %}
 {% load crispy_forms_tags %}
 
-<div class="masthead">
-    <div class="container">
-        <div class="row g-0">
-            
-            <div class="col-md-6 masthead-image">
-                {% if "placeholder" in recipie.featured_image.url %}
-                    <img src="{{ recipie.category_image }}" width="100%">
-                {% else %}
-                    <img src="{{ recipie.featured_image.url }}" width="100%">
-                {% endif %}
-            </div>            
-        </div>
-    </div>
-</div>
-
 <div class="container">
     <div class="row">
-        <div class="col card mb-4  mt-3 left  top">
-            <div class="card-body">
-                <div class="col-md-6 masthead-text">
-                    <!-- Post title goes in these h1 tags -->
-                    
-                    <h2 class="post-title">
-                        {{ recipie.title }}
-                    </h2>
-                    <!-- Post author goes before the | the post's created date goes after -->
-                    <p class="post-subtitle"> {{ recipie.name }} | {{ recipie.created_on }} </p>
-                </div>
-                <!-- The post content goes inside the card-text. -->
-                {{ recipie.content | linebreaks }}
-                <!-- Use the | safe filter inside the template tags -->
-                <p class="card-text "></p>
-                <div class="row">
-
-                    <div class="col-1">
+        <div class="col-md-6 masthead-image">
+            {% if "placeholder" in recipie.featured_image.url %}
+                <img src="{{ recipie.category_image }}" width="100%">
+            {% else %}
+                <img src="{{ recipie.featured_image.url }}" width="100%">
+            {% endif %}
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-4  mt-3 left  top">
+                <div class="card-body">
+                    <div class="col-md-6 masthead-text">
+                        <!-- Post title goes in these h1 tags -->
                         
-                        
+                        <h2 class="post-title">
+                            {{ recipie.title }}
+                        </h2>
+                        <!-- Post author goes before the | the post's created date goes after -->
+                        <p class="post-subtitle"> {{ recipie.author }} | {{ recipie.created_on }} </p>
                     </div>
-                    <div class="col-1">
-                        
+                    <!-- The post content goes inside the card-text. -->
+                    {{ recipie.content | linebreaks }}
+                    <!-- Use the | safe filter inside the template tags -->
+                    <p class="card-text "></p>
+                    <div class="row">
+    
+                        <div class="col-1">
+                            
+                            
+                        </div>
+                        <div class="col-1">
+                            
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card-footer text-center">
-                <strong>
-                    {% if user.is_authenticated %}
-                    <a href="{% url 'update_recipie' recipie.slug %}" class="btn btn-secondary btn-sm"><i class="fas fa-edit" aria-label="Edit recipie"></i></a>
-
-
-                    <form class="d-inline" action="{% url 'recipie_like' recipie.slug %}" method="POST">
-                        {% csrf_token %}
-                    
-                        {% if liked %}
-                        <button type="submit" name="blogpost_id" value="{{recipie.slug}}" class="btn-like" aria-label="Submit"><i 
-                                class="fas fa-heart"></i></button>
-                    
+                <div class="card-footer text-center">
+                    <strong>
+                        {% if user.is_authenticated %}
+                        <a href="{% url 'update_recipie' recipie.slug %}" class="btn btn-secondary btn-sm"><i class="fas fa-edit" aria-label="Edit recipie"></i></a>
+    
+    
+                        <form class="d-inline" action="{% url 'recipie_like' recipie.slug %}" method="POST">
+                            {% csrf_token %}
+                        
+                            {% if liked %}
+                            <button type="submit" name="blogpost_id" value="{{recipie.slug}}" class="btn-like" aria-label="Submit"><i 
+                                    class="fas fa-heart"></i></button>
+                        
+                            {% else %}
+                            <button type="submit" name="blogpost_id" value="{{recipie.slug}}" class="btn-like" aria-label="Submit"><i 
+                                    class="far fa-heart"></i></button>
+                        
+                            {% endif %}
+    
+                        </form>
                         {% else %}
-                        <button type="submit" name="blogpost_id" value="{{recipie.slug}}" class="btn-like" aria-label="Submit"><i 
-                                class="far fa-heart"></i></button>
-                    
+                        <span class="text-secondary"><i class="far fa-heart"></i></span>
+    
                         {% endif %}
-
-                    </form>
-                    {% else %}
-                    <span class="text-secondary"><i class="far fa-heart"></i></span>
-
-                    {% endif %}
-
-                    <span class="text-secondary">{{ recipie.number_of_likes }} </span>
-
-                    {% with comments.count as total_comments %}
-                        <span class="text-secondary"><i class="far fa-comments"></i>
-                            {{ total_comments }}
-                        </span>
-                        {% endwith %}
-
+    
+                        <span class="text-secondary">{{ recipie.number_of_likes }} </span>
+    
+                        {% with comments.count as total_comments %}
+                            <span class="text-secondary"><i class="far fa-comments"></i>
+                                {{ total_comments }}
+                            </span>
+                            {% endwith %}
+    
+                    
+                    
+                    </strong>
+    
+                </div>
                 
-                
-                </strong>
-
+    
             </div>
-            
 
         </div>
+
     </div>
+
     <div class="row">
         <div class="col">
             <hr>
         </div>
+        
+                    
     </div>
     <div class="row">
         <div class="col-md-8 card mb-4  mt-3 ">
@@ -136,7 +135,8 @@
                 {% endif %}
 
             </div>
-        </div>
+        </div>        
+    
     </div>
 </div>
 
