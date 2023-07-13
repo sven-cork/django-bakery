@@ -96,27 +96,32 @@ def recipie_like(request, slug):
     return HttpResponseRedirect(reverse('recipies_content', args=[slug]))
 
 
-class AddRecipie(SuccessMessageMixin, LoginRequiredMixin, CreateView):
-    model = Recipies
-    template_name = 'addrecipie.html'
-    success_url = reverse_lazy('home')
-    form_class = RecipieForm
+def add_recipie(request):
+    if request.method == 'POST':
+        form = RecipieForm(request.POST)
+        if form.is_valid():
+            recipie = form.save(commit=False)
+            if request.POST.get('status'):
+                recipie.status = int(request.POST.get('status'))
+            recipie.author = request.user
+            recipie.save()
+            messages.success(request, 'Recipe added successfully.')
+            return redirect('home')
+    else:
+        form = RecipieForm()
+    return render(request, 'addrecipie.html', {'form': form})
 
-    def form_valid(self, form):
-        if self.request.POST.get('status'):
-            form.instance.status = int(self.request.POST.get('status'))
-        form.instance.author = self.request.user
 
-        messages.success(self.request, 'Recipe added successfully.')
-        return super().form_valid(form)
+def update_recipie(request, slug):
+    recipie = get_object_or_404(Recipies, slug=slug)
+    form = RecipieForm(request.POST or None, instance=recipie)
 
+    if request.method == 'POST':
+        if form.is_valid():
+            form.save()
+            return redirect('home')
 
-class UpdateRecipie(SuccessMessageMixin, LoginRequiredMixin, UpdateView):
-    model = Recipies
-    form_class = RecipieForm
-    template_name = 'updaterecipie.html'
-    success_url = reverse_lazy('home')
-    success_message = 'Your recepie was successfully updated!'
+    return render(request, 'updaterecipie.html', {'form': form, 'recipie': recipie})
 
 
 def delete_recipie(request, recipie_id):

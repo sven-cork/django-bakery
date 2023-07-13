@@ -8,6 +8,14 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 class Recipies(models.Model):
 
+    allergy_category = {
+        'dy': 'Dairy allergy',
+        'nu': 'Nut allergy',
+        'wt': 'Wheat allergy',
+        'eg': 'Egg allergy',
+        'sn': 'Soybean allergy'
+    }
+
     bake_category = [
         ('ci_bu', 'Cinnamon Bun'),
         ('da_pa', 'Danish Pastry'),
@@ -51,6 +59,7 @@ class Recipies(models.Model):
                                related_name="recipie_posts")
     title = models.CharField(max_length=200, unique=True)
     category = models.CharField(max_length=15, choices=bake_category)
+    allergy = models.CharField(max_length=15, choices=allergy_category.items(), blank=True)
     created_on = models.DateTimeField(auto_now_add=True)
     created_date = models.DateTimeField(auto_now_add=True)
     updated_date = models.DateTimeField(auto_now=True)

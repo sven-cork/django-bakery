@@ -13,10 +13,11 @@ class RecipieForm(forms.ModelForm):
     default_image_url = 'https://res.cloudinary.com/dwxoyt0qz/image/upload/v1688292295/pexels-antonio-quagliata-227432_nwslyq.jpg'
 
     category = forms.ChoiceField(choices=Recipies.bake_category, required=False)
+    allergy = forms.ChoiceField(choices=Recipies.allergy_category.items(), required=False)
 
     class Meta:
         model = Recipies
-        fields = ('title', 'content', 'category')
+        fields = ('title', 'content', 'category', 'allergy')
 
     def save(self, commit=True):
         instance = super().save(commit=False)
