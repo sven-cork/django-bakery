@@ -6,6 +6,10 @@ body {
     color: red;
 }
 
+#allergy-none {
+    color: green;
+}
+
 .navbar.navbar-expand-lg.navbar-light {
     background-color: mistyrose;
     height: 70px !important;

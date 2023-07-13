@@ -13,7 +13,8 @@ class Recipies(models.Model):
         'nu': 'Nut allergy',
         'wt': 'Wheat allergy',
         'eg': 'Egg allergy',
-        'sn': 'Soybean allergy'
+        'sn': 'Soybean allergy',
+        'or': 'Other'
     }
 
     bake_category = [
