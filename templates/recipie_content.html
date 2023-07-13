@@ -24,6 +24,7 @@
                         <p class="post-subtitle"> {{ recipie.author }} | {{ recipie.created_on }} </p>
                     </div>
                     <!-- The post content goes inside the card-text. -->
+                    <p id="allergy-warning">{{ recipie.get_allergy_display }}</p>
                     {{ recipie.content | linebreaks }}
                     <!-- Use the | safe filter inside the template tags -->
                     <p class="card-text "></p>

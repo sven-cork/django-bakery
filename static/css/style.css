@@ -2,6 +2,10 @@ body {
     background-color: #F9FAFC;
 }
 
+#allergy-warning {
+    color: red;
+}
+
 .navbar.navbar-expand-lg.navbar-light {
     background-color: mistyrose;
     height: 70px !important;
