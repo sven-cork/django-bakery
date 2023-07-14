@@ -38,6 +38,10 @@ body {
     padding-top: 0%;
 }
 
+.nav-background-color {
+    background-color: mistyrose;
+}
+
 .hero-image {
     height: 400px; /* Adjust the height as needed */
     background-image: url('https://res.cloudinary.com/dwxoyt0qz/image/upload/v1688975740/django_bakery_header_rbkvfb.jpg');
@@ -46,6 +50,17 @@ body {
     background-position: center;
     margin-bottom: 50px;
     position: relative;
+  }
+
+.hero-image-login-signup {
+    height: 400px; /* Adjust the height as needed */
+    background-image: url('https://res.cloudinary.com/dwxoyt0qz/image/upload/v1689337166/happy_cake_small_ffcu20.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px;
+    position: relative;
+    width: 100%;
   }
 
 .hero-text {
@@ -63,8 +78,8 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.nav-background-color {
-    background-color: mistyrose;
+.form-spacing {
+    margin-bottom: 50px;
 }
  
 .col-with-background {
