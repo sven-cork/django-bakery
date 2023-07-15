@@ -5,14 +5,16 @@
 - [Django Bakery Introduction](#django-bakery-introduction)
   - Nested List Item                                          
 - [UX](#ux)
-  - Agile Methodology
-  - [User Stories](#user_stories)
+  - [User Stories](#user-stories)
   - [Wireframes](#wireframes)
     - [Home](#home)
     - [My Delights](#my-delights)
     - [Add Recipie](#add-recipie)
     - [Login and Register](#login-and-register)
   - Database design
+
+- [Agile Methodology](#agile-methodology)
+
 - [Technologies](#technologies) 
   - Languages
    -  
@@ -27,6 +29,7 @@
     - [W3C Validation](#w3c-validation)
     - [Python Validation](#python-validation)
 
+- [Bugs](#bugs)
 
 - [Deployment](#deployment)
   - [Elephant SQL](#elephant-sql)
@@ -49,7 +52,11 @@ The live website can be accessed here <link>
 ## UX
 ### Agile Methodology
 
-### User Stories
+<details>
+<summary>Agile details</summary>
+<br>
+GitHub projectboard was used to implement user stories for Django Bakery project. Each user story was provided a label depending of the urgency of implementation: "Must Have", "Should Have", "Could Have" and "Enchancement"
+</details>
 
 ### Wireframes
   #### Home
@@ -64,8 +71,7 @@ The live website can be accessed here <link>
   #### Login and Register
 ![Add recipie](/static/images/wireframe_login.png)
 
-## Technologies
-
+## User Stories
 ## Features
 
 ## Testing
@@ -88,6 +94,11 @@ The live website can be accessed here <link>
   ### Lighthouse
   ### W3C Validation 
   ### Python Validation
+
+## Bugs
+- While testing the comment feature in recipie_content.html, adding one comment to a recipie, I noticed the
+comment counter for this recipie had increased with 10 comments despite only one comment being submitted and awaiting admin approval. On the '/admin' page I confirmed 10 comments awaiting approval.
+No changes to the django code was performed in around the time of this issue and I was not able to reproduce the issue. Potentially this may have been linked to ongoing issues with the Wifi network, to which the computer running the cloud based IDE (GitPod) was connected. 
 
 ## Deployment
 
