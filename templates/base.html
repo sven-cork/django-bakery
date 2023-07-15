@@ -89,7 +89,15 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/abd17c27d8.js" crossorigin="anonymous"></script>
-    
+
+    <script>
+        setTimeout(function() {
+            var alerts = document.querySelectorAll('.alert-dismissible')
+            alerts.forEach(function(alert) {
+                alert.style.display = 'none';
+            });
+        }, 2500);
+    </script>
 </body>
 
 </html>
