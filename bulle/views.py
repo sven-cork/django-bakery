@@ -132,3 +132,15 @@ def delete_recipie(request, recipie_id):
     else:
         messages.error(request, "Unable to delete recipie.")
     return redirect('/')
+
+
+def delete_comment(request, comment_id):
+    comment = get_object_or_404(Comment, id=comment_id)
+
+    if comment.author == request.user:
+        comment.delete()
+        messages.success(request, "Comment successfully deleted.")
+    else:
+        messages.error(request, "Unable to delete comment.")
+
+    return redirect('recipies_content', slug=comment.recipie.slug)

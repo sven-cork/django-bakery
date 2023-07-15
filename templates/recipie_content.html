@@ -58,7 +58,7 @@
                 </div>
                 <div class="card-footer text-center">
                     <strong>
-                        {% if user.is_authenticated %}
+                        {% if recipie.author == user %}
                         <a href="{% url 'update_recipie' recipie.slug %}" class="btn btn-secondary btn-sm"><i class="fas fa-edit" aria-label="Edit recipie"></i></a>
     
     
@@ -126,6 +126,15 @@
                     </p>
                     <!-- The body of the comment goes before the | -->
                     {{ comment.content | linebreaks }}
+
+                    {% if recipie.author == user %}
+                    <!-- Delete icon for recipie author -->
+                    <form method="POST" action="{% url 'delete_comment' comment.id %}">
+                        {% csrf_token %}
+                        <span><a href="{% url 'delete_comment' comment.id %}" class="card-link"><i class="fa-regular fa-trash-can"></i></a>
+                        </span>
+                    </form>
+                    {% endif %}
                 </div>
                 <!-- Our for loop ends here -->
                 {% endfor %}

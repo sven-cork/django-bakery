@@ -9,5 +9,5 @@ urlpatterns = [
     path('recipies/<slug:slug>/', views.RecipieDetail.as_view(), name='recipies_content'),
     path('like/<slug:slug>', views.recipie_like, name="recipie_like"),
     path('recipies/update/<slug:slug>/', views.update_recipie, name='update_recipie'),
-    
+    path('delete_comment/<int:comment_id>/', views.delete_comment, name='delete_comment'),    
 ]
