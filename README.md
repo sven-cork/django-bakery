@@ -72,6 +72,33 @@ GitHub projectboard was used to implement user stories for Django Bakery project
 ![Add recipie](/static/images/wireframe_login.png)
 
 ## User Stories
+  ### Start Page
+  - As a site visitor, it is apparent that the nature of the website is about baking/dessert recipies.
+  - As a site user, I can view a list of the most recent recipie posts.
+  - As a site user, I can get an overview of the popularity of various recipies based on the
+  number of likes.
+  - As a site user, I can login or register an account if not already a member.
+
+    ### View Recipie
+  - As a site user, to read the ingredients for a recipie, I can view any of the recipies posted on Django Bakery website.
+  - As a site user, to express appreciation for a recipie or provide feedback, I can leave a comment using the "Leave a comment" form.
+  - As a site user, I can like or unlike a recipie.
+
+  ### Add Recipie Page
+  - As a site user, I can add my own recipie setting a recipie title, add ingredients to the "Content" area, select a picture from the "Category" menu and if needed select an allergy warning from the "Allergy" menu.
+
+  ### Update Recipie Page
+  - As a site user, I can update any of my recipies using the "Edit" button in order to change the title, add/remove ingredients, change allergy category or image category.
+
+  ### Login Page
+  - As a site user, to gain full access to the website I can sign in with a username and a password.
+
+  ### Register Page
+  - As a site user, if I do not have a website account, I can sign up providing a username, email address (optional) and password.
+
+  ### Logout Page
+  - As a site user, I can select to logout of my django bakery account, confirming with a "Sign Out" button.
+
 ## Features
 
 ## Testing
