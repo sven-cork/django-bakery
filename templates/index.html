@@ -54,12 +54,16 @@
                                 <p class="card-text text-muted h6">
                                     <span class="flex-container">
                                         <span class="flex-item">{{ recipie.created_on }}</span>
+                                        <!-- Solid heart icon with total number of likes if likes count larger than 0-->
                                         {% if recipie.number_of_likes > 0 %}
                                         <span class="flex-item"><i class="fas fa-heart"></i> {{ recipie.number_of_likes }}</span>
                                         {% else %}
+                                        <!-- Empty heart icon with like count equaling 0-->
                                         <span class="flex-item"><i class="far fa-heart"></i> {{ recipie.number_of_likes }}</span>
                                         {% endif %}
+                                        <!-- Total number of recipie comments-->
                                         <span class="flex-item"><i class="far fa-comments"></i> {{ recipie.number_of_comments }}</span>
+                                        <!-- Delete icon to remove comment for recipie author-->
                                         {% if recipie.author == user %}
                                         <span><a href="{% url 'delete_recipie' recipie.id %}" class="card-link"><i class="fa-regular fa-trash-can"></i></a>
                                             </span>

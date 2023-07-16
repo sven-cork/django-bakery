@@ -10,6 +10,7 @@ body {
     color: green;
 }
 
+
 .navbar.navbar-expand-lg.navbar-light {
     background-color: mistyrose;
     height: 70px !important;
@@ -28,9 +29,17 @@ body {
     max-width: 6vh;
 }
 
+#navbarText {
+    text-align: right;
+}
+
 #logo {
     font-family: 'Freehand';
     font-size: large
+}
+
+nav {
+    z-index: 1;
 }
 
 .nav-padding {
@@ -62,6 +71,12 @@ body {
     position: relative;
     width: 100%;
   }
+
+@media (max-width= 768px) {
+    .hero-image {
+        height: 200px;
+    }
+}
 
 .hero-text {
     position: absolute;
@@ -207,3 +222,4 @@ body {
 .flex-item {
     margin: 0 10px;
 }
+
