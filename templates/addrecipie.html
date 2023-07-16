@@ -2,7 +2,6 @@
 {% block content %}
 {% load crispy_forms_tags %}
 
-<!-- Create recipie form -->
 <div class="container">
     <div class="row">
         <div class="col-md-8 mt-3 offset-md-2">
@@ -11,6 +10,7 @@
     </div>
     <div class="row">
         <div class="col-md-8 mt-3 offset-md-2">
+            <!-- Create recipie form -->
             <form method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form.title | as_crispy_field }}

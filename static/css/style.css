@@ -10,12 +10,6 @@ body {
     color: green;
 }
 
-
-.navbar.navbar-expand-lg.navbar-light {
-    background-color: mistyrose;
-    height: 70px !important;
-}
-
 .masthead-image {
     margin-top: 70px;
 }
@@ -40,6 +34,8 @@ body {
 
 nav {
     z-index: 1;
+    background-color: mistyrose;
+    height: 70px !important;
 }
 
 .nav-padding {

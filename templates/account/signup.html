@@ -17,8 +17,10 @@
     </div>
 {% endif %}
 
+
 <div class="container-fluid">
   <div class="row">
+      <!--Hero image for login and register page -->
       <div class="hero-image-login-signup">
           <div class="hero-text">
               <h1>Django Bakery</h1>
@@ -35,8 +37,10 @@
     </div>
 
   </div>
+  
   <div class="row form-spacing">
     <div class="col-md-8 mt-3 offset-md-2">
+      <!--Register account form-->
       <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
         {% csrf_token %}
         {{ form.as_p }}
@@ -49,9 +53,5 @@
     </div>
   </div>
 </div>
-
-
-
-
 
 {% endblock %}
