@@ -8,83 +8,61 @@ from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import CreateView, UpdateView
+from django.shortcuts import render
+from django.core.paginator import Paginator
+from .models import Recipies
 
 
-class RecipieList(generic.ListView):
-    model = Recipies
+def recipie_list(request):
     queryset = Recipies.objects.filter(status=1).order_by('-created_on')
-    template_name = "index.html"
-    paginate_by = 9
+    paginator = Paginator(queryset, 9)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['bake_category_cover'] = Recipies.bake_category_cover
-        return context
+    bake_category_cover = Recipies.bake_category_cover
 
-    def get_queryset(self):
-        category = self.request.GET.get('category')
-        if category:
-            queryset = self.queryset.filter(category=category)
-        else:
-            queryset = self.queryset
-        return queryset
+    context = {
+        'recipies_list': page_obj,
+        'bake_category_cover': bake_category_cover,
+        'page_obj': page_obj
+    }
+    return render(request, "index.html", context)
 
 
-class RecipieDetail(View):
-    def get(self, request, slug, *args, **kwargs):
-        queryset = Recipies.objects.filter(status=1)
-        recipie = get_object_or_404(queryset, slug=slug)
-        comments = recipie.comments.filter(approved=True).order_by('created_on')
-        liked = False
-        if recipie.likes.filter(id=self.request.user.id).exists():
-            liked = True
+def recipie_detail(request, slug):
+    queryset = Recipies.objects.filter(status=1)
+    recipie = get_object_or_404(queryset, slug=slug)
+    comments = recipie.comments.filter(approved=True).order_by('created_on')
+    liked = False
+    if recipie.likes.filter(id=request.user.id).exists():
+        liked = True
 
-        return render(
-            request,
-            "recipie_content.html",
-            {
-                "recipie": recipie,
-                "comments": comments,
-                "commented": False,
-                "liked": liked,
-                "comment_form": CommentForm(),
-            },
-        )
-    
-    def post(self, request, slug, *args, **kwargs):
-        queryset = Recipies.objects.filter(status=1)
-        recipie = get_object_or_404(queryset, slug=slug)
-        comments = recipie.comments.filter(approved=True).order_by('created_on')
-        liked = False
-        if recipie.likes.filter(id=self.request.user.id).exists():
-            liked = True
-        
-        comment_form = CommentForm(data=request.POST)
-        print(" comment from ", comment_form)
-
+    if request.method == 'POST':
+        comment_form = CommentForm(request.POST)
         if comment_form.is_valid():
-            print(" in is valid")
             comment_form.instance.email = request.user.email
             comment_form.instance.name = request.user.username
             comment_form.instance.author = request.user
             comment = comment_form.save(commit=False)
             comment.recipie = recipie
-            print("comment recipe is ", comment)
             comment.save()
-        else:
-            comment_form = CommentForm()
+            return HttpResponseRedirect(reverse("recipies_content", kwargs={"slug": slug}))
 
-        return render(
-            request,
-            "recipie_content.html",
-            {
-                "recipie": recipie,
-                "comments": comments,
-                "commented": True,
-                "liked": liked,
-                "comment_form": CommentForm()
-            },          
-        )
+    else:
+        comment_form = CommentForm()
+
+    return render(
+        request,
+        "recipie_content.html",
+        {
+            "recipie": recipie,
+            "comments": comments,
+            "commented": False,
+            "liked": liked,
+            "comment_form": comment_form,
+        },
+    )
+
 
 def recipie_like(request, slug):
     recipie = get_object_or_404(Recipies, slug=slug)  
