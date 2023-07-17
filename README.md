@@ -1,4 +1,4 @@
-<AM I Responsive overlay: https://ui.dev/amiresponsive>
+[![Am I responsive screenshot of Django Bakery](assets/images/am_I_responsive.png)]
 
 
 ## Table of contents

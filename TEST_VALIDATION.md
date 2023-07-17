@@ -1,5 +1,7 @@
-## Testing and Validation
+## Testing, Compatibility and Validation
 - [Manual Testing](#manual-testing)
+
+- [Browser Compatibility](#browser-compatibility)
 
 - [Validation and Performance](#validation-and-performance)
 
@@ -17,7 +19,22 @@
   | On "Register" page enter username and password values | Creates new site user | Pass |
   | On "Add Recipie" page enter values for "Title" and "Content", choose a category and select "Update" button  | Adds a new recipie rendered on Homepage | Pass |
 
+## Browser Compatibility
+ | Browser | Functionality for the following pages: Home, Add Recipie, Login, Logut, Register | Pass/Fail |
+  |--------|--------------------|-----------|
+  | Chrome | All functionality works as expected | Pass |
+  | Safari | All functionality works as expected | Pass |
+  | Firefox | All functionality works as expected | Pass |
+
 ## Validation and Performance
+
+  ### Lighthouse
+  <details>
+  <summary>Desktop</summary>
+  <br>
+  [![Lightouse Desktop Home Page](assets/images/lighthouse_desktop_home.png)]
+
+  </details>
   To test 
   ### HTML, CSS and Python validation
   ### Lighthouse
