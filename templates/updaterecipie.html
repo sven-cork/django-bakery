@@ -31,8 +31,8 @@
                 {{ form.category | as_crispy_field }}
                 {{ form.allergy | as_crispy_field }}
                 <br>
-                <button type="submit" class="btn btn-success">Update</button>
-                <a href="{% url 'home' %}" role="button" class="btn btn-secondary">Go back</a>
+                <button type="submit" class="btn btn-success" aria-label="Update button">Update</button>
+                <a href="{% url 'home' %}" role="button" class="btn btn-secondary" aria-label="Go back button">Go back</a>
             </form>
             
         </div>
