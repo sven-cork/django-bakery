@@ -23,14 +23,24 @@
   ### Home Page
   | Action | Expected Behaviour | Pass/Fail |
   |--------|--------------------|-----------|
-  | Select "Home" in Navigation bar | Renders Homepage | Pass |
-  | Select "Add Recipie" in Navigation bar | Renders Add Recipie page | Pass |
-  | Select "Register" in Navigation bar | Renders Register page | Pass |
-  | Select "Login" in Navigation bar | Renders Login page | Pass |
-  | Select "Logout" in Navigation bar | Renders Logout validation | Pass |
-  | Select "Sign Out" button on "Logout" page | Logs out user and renders Homepage | Pass |
-  | On "Register" page enter username and password values | Creates new site user | Pass |
-  | On "Add Recipie" page enter values for "Title" and "Content", choose a category and select "Update" button  | Adds a new recipie rendered on Homepage | Pass |
+  | Select a recipie to read content | Renders the recipie selected | Pass |
+
+  ### Add Recipie Page
+  | Action | Expected Behaviour | Pass/Fail |
+  |--------|--------------------|-----------|
+  | Add title | Title rendered when viewing recipie details | Pass |
+  | Add content | Ingredients rendered when viewing recipie details | Pass |
+  | Select category | Picture belonging to selected category rendered when viewing recipie details | Pass |
+  | Select allergy | Allergy warning rendered when viewing recipie details | Pass |
+
+  ### Update Recipie Page
+  | Action | Expected Behaviour | Pass/Fail |
+  |--------|--------------------|-----------|
+  | Edit title | Updated title rendered when viewing recipie details | Pass |
+  | Edit content | Updated ingredients rendered when viewing recipie details | Pass |
+  | Edit category | Picture belonging to edited category rendered when viewing recipie details | Pass |
+  | Select allergy | New allergy warning rendered when viewing recipie details | Pass |
+  
 
 ## Browser Compatibility
  | Browser | Functionality for the following pages: Home, Add Recipie, Login, Logut, Register | Pass/Fail |
@@ -48,30 +58,33 @@
   
   - Home page
 
-  [![Lightouse desktop Home page](assets/images/lighthouse_desktop_home.png)]
+  [![Lightouse desktop Home page](assets/images/home_desktop.png)]
 
-  - View Recipie page
+  - View Recipie Detauls page
 
   [![Lightouse desktop View Recipie page](assets/images/view_recipie_desktop.png)]
 
   - Add Recipie page
 
-  [![Lightouse Add Recipie desktop page](assets/images/lighthouse_desktop_addrecipie.png)]
+  [![Lightouse Add Recipie desktop page](assets/images/addrecipie_desktop.png)]
 
   - Update page
 
-  [![Lightouse Add Recipie desktop Page](assets/images/update_recipie_desktop.png)]
+  [![Lightouse Add Recipie desktop Page](assets/images/update_desktop.png)]
 
   - Register page
 
+  [![Lightouse Register desktop Page](assets/images/register_desktop.png)]
+
   - Login
+
+  [![Lightouse Login desktop Page](assets/images/login_desktop.png)]
 
   - Logout
 
-    [![Lightouse Logout desktop page](assets/images/logout_desktop.png)]
+  [![Lightouse Logout desktop page](assets/images/logout_desktop.png)]
 
-
-  </details>
+ </details>
 
   <details>
   <summary>Mobile</summary>
@@ -79,24 +92,31 @@
   
   - Home page
 
-  [![Lightouse Mobile Home page]()]
+  [![Lightouse desktop Home page](assets/images/home_mobile.png)]
+
+  - View Recipie Details page
+
+  [![Lightouse desktop View Recipie page](assets/images/view_recipie_mobile.png)]
 
   - Add Recipie page
 
-  [![Lightouse Add Recipie mobile page]()]
+  [![Lightouse Add Recipie desktop page](assets/images/addrecipie_mobile.png)]
 
   - Update page
 
-  [![Lightouse Add Recipie mobile page](assets/images/update_recipie_mobile.png)]
+  [![Lightouse Add Recipie desktop Page](assets/images/update_mobile.png)]
 
   - Register page
 
+  [![Lightouse Register desktop Page](assets/images/register_mobile.png)]
+
   - Login
+  
+  [![Lightouse Login desktop Page](assets/images/login_mobile.png)]
 
   - Logout
 
-    [![Lightouse Logout mobile page](assets/images/logout_mobile.png)]
-
+  [![Lightouse Logout desktop page](assets/images/logout_mobile.png)]
 
   </details>
 
