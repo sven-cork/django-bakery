@@ -50,6 +50,10 @@
 
   [![Lightouse desktop Home page](assets/images/lighthouse_desktop_home.png)]
 
+  - View Recipie page
+
+  [![Lightouse desktop View Recipie page](assets/images/view_recipie_desktop.png)]
+
   - Add Recipie page
 
   [![Lightouse Add Recipie desktop page](assets/images/lighthouse_desktop_addrecipie.png)]

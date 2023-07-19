@@ -35,10 +35,10 @@
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in recipie.featured_image.url %}
-                                <img class="card-img-top"
+                                <img class="card-img-top" alt="Recipie picture"
                                     src="https://res.cloudinary.com/dwxoyt0qz/image/upload/v1688292295/pexels-antonio-quagliata-227432_nwslyq.jpg">
                                 {% else %}
-                                <img class="card-img-top" src=" {{ recipie.featured_image.url }}">
+                                <img class="card-img-top" alt="Recipie picture" src=" {{ recipie.featured_image.url }}">
                                 {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Author: {{ recipie.author }}</p>
