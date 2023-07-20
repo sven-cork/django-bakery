@@ -90,12 +90,10 @@
   <summary>Mobile</summary>
   <br>
   
-  - Home page
-
+  Home page
   [![Lightouse desktop Home page](assets/images/home_mobile.png)]
 
-  - View Recipie Details page
-
+  View Recipie Details page
   [![Lightouse desktop View Recipie page](assets/images/view_recipie_mobile.png)]
 
   - Add Recipie page
@@ -120,6 +118,9 @@
 
   </details>
 
+### HTML Validation
+ HTML validation was carried out using [W3 NU HTML Checker](https://validator.w3.org/nu/).
+  [![W3 NU HTML Checker](assets/images/html_checker.png)]
 
   To test 
   ### HTML, CSS and Python validation

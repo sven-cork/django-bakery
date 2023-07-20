@@ -35,7 +35,8 @@ DEBUG = False
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['django-bakery-79fee6bf117c.herokuapp.com', 'django-baker-862762494240.herokuapp.com', 'localhost', '8000-svencork-djangobakery-ueorlxlqytk.ws-eu101.gitpod.io']
+ALLOWED_HOSTS = ['django-bakery-79fee6bf117c.herokuapp.com', 'django-baker-862762494240.herokuapp.com',
+                 'localhost', '8000-svencork-djangobakery-ueorlxlqytk.ws-eu101.gitpod.io', '8000-svencork-djangobakery-ueorlxlqytk.ws-eu102.gitpod.io']
 
 # Application definition
 
