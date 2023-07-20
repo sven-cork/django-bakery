@@ -107,7 +107,12 @@ The live website can be accessed here <link>
   Underneath each recipie the number of likes and comments with corresponding icons are displayed. Recipies submitted by logged in user also
   displays a trash icon allowing deletion of the recipie.
 
-  ![Screenshot of home page](assets/images/features_home.png)
+  ![Screenshot of Home Page](assets/images/features_home.png)
+
+  ### Add Recipie Page
+  On the Add Recipie page, registered site users can submit their own recpies with "Title" information, recipie ingredients in a "Content" section, recipie picture selected from "Category" drop menu and allergy information selected from an "Allergy" drop menu.
+  
+  ![Screenshot of Add Recipie page](assets/images/features_addrecipie.png)
 
 ## Testing
  
