@@ -126,6 +126,24 @@
  CSS validation was carried out using [W3C CSS Validator Checker](https://jigsaw.w3.org/css-validator/).
   [![W3C CSS Validator Checker](assets/images/css_checker.png)]
 
+### JavaScript Validation
+ JavaCript validation was carried out using [jshint](https://jshint.com/)
+  [![JavaScript validation with jshint](assets/images/jshint.png)]
+
+### Python Validation
+
+  <details>
+  <summary>Python Validation</summary>
+  <br>
+
+  | .py file | CI Python Linter Result|
+  |--------|--------------------|
+  | settings.py | [![settings.py Python Linter result screenshot](assets/images/settings.py_python_linter.png)] |
+  
+  </details> 
+  
+
+
   To test 
   ### HTML, CSS and Python validation
   ### Lighthouse

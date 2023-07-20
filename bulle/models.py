@@ -56,7 +56,7 @@ class Recipies(models.Model):
         'tr_le': 'https://res.cloudinary.com/dwxoyt0qz/image/upload/v1687876768/trifle_eenoqq.jpg',
     }
 
-    author = models.ForeignKey(User, on_delete=models.CASCADE, 
+    author = models.ForeignKey(User, on_delete=models.CASCADE,
                                related_name="recipie_posts")
     title = models.CharField(max_length=200, unique=True)
     category = models.CharField(max_length=15, choices=bake_category)
@@ -76,13 +76,13 @@ class Recipies(models.Model):
 
     def __str__(self):
         return self.title
-    
+
     def number_of_likes(self):
         return self.likes.count()
-    
+
     def number_of_comments(self):
         return self.comments.count()
-    
+
     def get_absolute_url(self):
         return reverse("recipie_detail",  kwargs={"slug": self.slug})
 
@@ -96,15 +96,9 @@ class Comment(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     content = models.TextField()
     approved = models.BooleanField(default=False)
-    
+
     class Meta:
         ordering = ["created_on"]
 
     def __str__(self):
         return f"Comment {self.content} by {self.name}"
-
-    
-
-    
-
-

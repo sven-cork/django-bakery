@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
-from django.http import HttpResponseRedirect 
+from django.http import HttpResponseRedirect
 from .models import Recipies, Comment
 from django.urls import reverse_lazy, reverse
 from .forms import CommentForm, RecipieForm
@@ -65,12 +65,12 @@ def recipie_detail(request, slug):
 
 
 def recipie_like(request, slug):
-    recipie = get_object_or_404(Recipies, slug=slug)  
+    recipie = get_object_or_404(Recipies, slug=slug)
     if recipie.likes.filter(id=request.user.id).exists():
         recipie.likes.remove(request.user)
     else:
-        recipie.likes.add(request.user)  
-    
+        recipie.likes.add(request.user)
+
     return HttpResponseRedirect(reverse('recipies_content', args=[slug]))
 
 
@@ -104,7 +104,7 @@ def update_recipie(request, slug):
 
 def delete_recipie(request, recipie_id):
     recipie = get_object_or_404(Recipies, id=recipie_id)
-    if recipie.author == request.user:    
+    if recipie.author == request.user:
         recipie.delete()
         messages.success(request, "Recipie successfully deleted.")
     else:
