@@ -1,4 +1,4 @@
-## Testing, Compatibility and Validation
+# Testing, Compatibility and Validation
 - [Manual Testing](#manual-testing)
 
 - [Browser Compatibility](#browser-compatibility)
@@ -121,6 +121,10 @@
 ### HTML Validation
  HTML validation was carried out using [W3 NU HTML Checker](https://validator.w3.org/nu/).
   [![W3 NU HTML Checker](assets/images/html_checker.png)]
+
+### CSS Validation
+ CSS validation was carried out using [W3C CSS Validator Checker](https://jigsaw.w3.org/css-validator/).
+  [![W3C CSS Validator Checker](assets/images/css_checker.png)]
 
   To test 
   ### HTML, CSS and Python validation
