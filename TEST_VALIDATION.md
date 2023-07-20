@@ -122,15 +122,24 @@
  HTML validation was carried out using [W3 NU HTML Checker](https://validator.w3.org/nu/).
   [![W3 NU HTML Checker](assets/images/html_checker.png)]
 
+  <br>
+
 ### CSS Validation
  CSS validation was carried out using [W3C CSS Validator Checker](https://jigsaw.w3.org/css-validator/).
   [![W3C CSS Validator Checker](assets/images/css_checker.png)]
+
+  <br>
 
 ### JavaScript Validation
  JavaCript validation was carried out using [jshint](https://jshint.com/)
   [![JavaScript validation with jshint](assets/images/jshint.png)]
 
+  <br>
+
 ### Python Validation
+  Python testing was carried out with pep8 in GitPod IDE and [CI Python Linter](https://pep8ci.herokuapp.com/).
+  No errors reported however several notifications of lines being too long. From researching previous student project work
+  it is my understanding that this does not indicate invalid code, however a preference of style. 
 
   <details>
   <summary>Python Validation</summary>
@@ -139,6 +148,10 @@
   | .py file | CI Python Linter Result|
   |--------|--------------------|
   | settings.py | [![settings.py Python Linter result screenshot](assets/images/settings.py_python_linter.png)] |
+  | urls.py | [![urls.py Python Linter result screenshot](assets/images/urls.py_python_linter.png)] |
+  | forms.py | [![forms.py Python Linter result screenshot](assets/images/forms.py_python_linter.png)] |  
+  | models.py | [![models.py Python Linter result screenshot](assets/images/models.py_python_linter.png)] |  
+  | views.py | [![views.py Python Linter result screenshot](assets/images/views.py_python_linter.png)] |  
   
   </details> 
   

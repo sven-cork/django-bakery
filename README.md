@@ -10,7 +10,8 @@
     - [Home](#home)
     - [My Delights](#my-delights)
     - [Add Recipie](#add-recipie)
-    - [Login and Register](#login-and-register)
+    - [Login](#login)
+    - [Register](#register)
   - Database design
 
 - [Agile Methodology](#agile-methodology)
@@ -52,24 +53,22 @@ The live website can be accessed here <link>
 ## UX
 ### Agile Methodology
 
-<details>
-<summary>Agile details</summary>
-<br>
-GitHub projectboard was used to implement user stories for Django Bakery project. Each user story was provided a label depending of the urgency of implementation: "Must Have", "Should Have", "Could Have" and "Enchancement"
-</details>
+[GitHub projectboard](https://github.com/users/sven-cork/projects/10) was used to implement user stories for Django Bakery project. Each user story was provided a label depending of the urgency of implementation: "Must Have", "Should Have", "Could Have" and "Enchancement":
+
+![GitHub Issues](assets/images/github_issues.png)
 
 ### Wireframes
   #### Home
-![Home overview](/static/images/wireframe_django_home.png)
-
-  #### My Delights
-![My Delights](/static/images/wireframe_my_delights.png)
+![Home overview](assets/images/wireframe_django_home.png)
 
   #### Add Recipie
-![Add recipie](/static/images/wireframe_add_recipie.png)
+![Add recipie](assets/images/wireframe_add_recipie.png)
 
-  #### Login and Register
-![Add recipie](/static/images/wireframe_login.png)
+  #### Login
+![Add recipie](assets/images/wireframe_login.png)
+
+#### Register
+![Add recipie](assets/images/wireframe_login.png)
 
 ## User Stories
   ### Start Page
@@ -79,7 +78,7 @@ GitHub projectboard was used to implement user stories for Django Bakery project
   number of likes.
   - As a site user, I can login or register an account if not already a member.
 
-    ### View Recipie
+  ### View Recipie
   - As a site user, to read the ingredients for a recipie, I can view any of the recipies posted on Django Bakery website.
   - As a site user, to express appreciation for a recipie or provide feedback, I can leave a comment using the "Leave a comment" form.
   - As a site user, I can like or unlike a recipie.
@@ -177,7 +176,7 @@ Django Bakery was deployed to Heroku as per the below steps:
 ## Credits
 
 ### Django logo, classes
-  Inspiration for the Django logo located in navbar using favicon.io and class based approach to structure views.py is attributed to [Eleanor Bucke's project 4, "Bhawari Khana"](https://pp4.herokuapp.com/) (on GitHub: https://github.com/eleanorbucke21/PP4).
+  Inspiration for the Django logo located in navbar and hero is attributed to [Eleanor Bucke's project 4, "Bhawari Khana"](https://pp4.herokuapp.com/) (on GitHub: https://github.com/eleanorbucke21/PP4).
 
 ### Fetch image category from database
   Inspiration to fetch image category from database (models.py) when creating a recipie is attributed to [Tony Albanese's project 4, "BookShelf"](https://ci-project-4-bookshelf.herokuapp.com/) (on GitHub: https://github.com/tony-albanese/ci-project-4).
