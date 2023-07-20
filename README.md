@@ -100,6 +100,15 @@ The live website can be accessed here <link>
 
 ## Features
 
+  ### Home Page
+  Recipies submitted by registered site users are displayed on the home page. The home page is paginated with a break point of 9 recipies
+  per page, which I believe provides a good balance providing sufficient content howeve avoids a cluttered feel. 
+  Each recipie is depicted with a picture selected by the recipie author from a pre-defined category list at time of recipie creation. 
+  Underneath each recipie the number of likes and comments with corresponding icons are displayed. Recipies submitted by logged in user also
+  displays a trash icon allowing deletion of the recipie.
+
+  ![Screenshot of home page](assets/images/features_home.png)
+
 ## Testing
  
 
@@ -175,7 +184,7 @@ Django Bakery was deployed to Heroku as per the below steps:
 
 ## Credits
 
-### Django logo, classes
+### Django logo and Hero Image Layout
   Inspiration for the Django logo located in navbar and hero is attributed to [Eleanor Bucke's project 4, "Bhawari Khana"](https://pp4.herokuapp.com/) (on GitHub: https://github.com/eleanorbucke21/PP4).
 
 ### Fetch image category from database
