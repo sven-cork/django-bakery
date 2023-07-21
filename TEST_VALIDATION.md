@@ -5,6 +5,8 @@
 
 - [Browser Compatibility](#browser-compatibility)
 
+- [Device Compatibility](#device-compatibility)
+
 - [Validation and Performance](#validation-and-performance)
 
 - [Bugs](#bugs)
@@ -52,13 +54,18 @@
   | Select allergy | New allergy warning rendered when viewing recipie details | Pass |
   
 
-## Browser Compatibility
+## Browser and Device Compatibility
+  All features of Django website (adding, updating, deleting recipie; register user, login) for a number of web browsers were tested for following Django Bakery website pages: Home, Add Recipie, Login, Logout, Register. The following devices: MacBook, iPhone 12 Pro, iPad Air were used was per the table below
 
- | Browser | Functionality for the following pages: Home, Add Recipie, Login, Logut, Register | Pass/Fail |
+  | Device | Browsers | Functionality for the following pages: Home, Add Recipie, Login, Logut, Register | Screenshot | Pass/Fail |
+  |--------|--------------------|-----------|---------|----|
+  | MacBook Pro M1 13"    | Chrome, Safari, Firefox | All functionality works as expected | ![MacBook Pro 13"](assets/images/macbookpro_safari.png)  | Pass |
+  
+
+## Browser Compatibility
+| Device | Functionality for the following pages: Home, Add Recipie, Login, Logut, Register | Pass/Fail |
   |--------|--------------------|-----------|
   | Chrome | All functionality works as expected | Pass |
-  | Safari | All functionality works as expected | Pass |
-  | Firefox | All functionality works as expected | Pass |
 
 ## Validation and Performance
 
