@@ -60,6 +60,7 @@
   | Device | Browsers | Functionality for the following pages: Home, Add Recipie, Login, Logut, Register | Screenshot | Pass/Fail |
   |--------|--------------------|-----------|---------|----|
   | MacBook Pro M1 13"    | Chrome, Safari, Firefox | All functionality works as expected | [![MacBook Pro 13"](assets/images/macbookpro_safari.png)]  | Pass |
+  | iPhone 8 Plus   | Chrome, Safari, Firefox | All functionality works as expected | [![MacBook Pro 13"](assets/images/macbookpro_safari.png)]  | Pass |
   
 
 ## Browser Compatibility

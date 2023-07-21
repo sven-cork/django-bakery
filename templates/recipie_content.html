@@ -58,7 +58,7 @@
                 </div>
                 <div class="card-footer text-center">
                     <strong>
-                        {% if request.user.is_authenticated %}
+                        {% if recipie.author == user %}
                         <a href="{% url 'update_recipie' recipie.slug %}" aria-label="Edit recipie" alt="Edit recipie" class="btn btn-secondary btn-sm"><i class="fas fa-edit" alt="Edit recipie"></i></a>
     
     
@@ -77,8 +77,23 @@
     
                         </form>
                         {% else %}
-                        <span class="text-secondary"><i class="far fa-heart"></i></span>
+                        {% if request.user.is_authenticated %}
+                        <form class="d-inline" action="{% url 'recipie_like' recipie.slug %}" method="POST">
+                            {% csrf_token %}
+                        
+                            {% if liked %}
+                            <button type="submit" name="blogpost_id" value="{{recipie.slug}}" class="btn-like" aria-label="Submit"><i 
+                                    class="fas fa-heart"></i></button>
+                        
+                            {% else %}
+                            <button type="submit" name="blogpost_id" value="{{recipie.slug}}" class="btn-like" aria-label="Submit"><i 
+                                    class="far fa-heart"></i></button>
+                        
+                            {% endif %}
     
+                        </form>
+    
+                        {% endif %}
                         {% endif %}
     
                         <span class="text-secondary">{{ recipie.number_of_likes }} </span>
