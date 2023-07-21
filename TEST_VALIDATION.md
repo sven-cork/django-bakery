@@ -1,14 +1,20 @@
-# Testing, Compatibility and Validation
+[Go back README.md](README.md)
+
+# Testing, Validation and Performance
 - [Manual Testing](#manual-testing)
 
 - [Browser Compatibility](#browser-compatibility)
 
 - [Validation and Performance](#validation-and-performance)
 
+- [Bugs](#bugs)
+
 
 ## Manual Testing
 
   ### Navbar
+  ___
+
   | Action | Expected Behaviour | Pass/Fail |
   |--------|--------------------|-----------|
   | Select "Home" in Navigation bar | Renders Homepage | Pass |
@@ -21,6 +27,8 @@
   | On "Add Recipie" page enter values for "Title" and "Content", choose a category and select "Update" button  | Adds a new recipie rendered on Homepage | Pass |
 
   ### Home Page
+  ___
+
   | Action | Expected Behaviour | Pass/Fail |
   |--------|--------------------|-----------|
   | Select a recipie to read content | Renders the recipie selected | Pass |
@@ -34,6 +42,8 @@
   | Select allergy | Allergy warning rendered when viewing recipie details | Pass |
 
   ### Update Recipie Page
+  ___
+
   | Action | Expected Behaviour | Pass/Fail |
   |--------|--------------------|-----------|
   | Edit title | Updated title rendered when viewing recipie details | Pass |
@@ -43,6 +53,7 @@
   
 
 ## Browser Compatibility
+
  | Browser | Functionality for the following pages: Home, Add Recipie, Login, Logut, Register | Pass/Fail |
   |--------|--------------------|-----------|
   | Chrome | All functionality works as expected | Pass |
@@ -59,30 +70,37 @@
   - Home page
 
   [![Lightouse desktop Home page](assets/images/home_desktop.png)]
+  ___
 
   - View Recipie Detauls page
 
   [![Lightouse desktop View Recipie page](assets/images/view_recipie_desktop.png)]
+  ___
 
   - Add Recipie page
 
   [![Lightouse Add Recipie desktop page](assets/images/addrecipie_desktop.png)]
+  ___
 
   - Update page
 
   [![Lightouse Add Recipie desktop Page](assets/images/update_desktop.png)]
+  ___
 
   - Register page
 
   [![Lightouse Register desktop Page](assets/images/register_desktop.png)]
+  ___
 
   - Login
 
   [![Lightouse Login desktop Page](assets/images/login_desktop.png)]
+  ___
 
   - Logout
 
   [![Lightouse Logout desktop page](assets/images/logout_desktop.png)]
+  ___
 
  </details>
 
@@ -122,19 +140,16 @@
  HTML validation was carried out using [W3 NU HTML Checker](https://validator.w3.org/nu/).
   [![W3 NU HTML Checker](assets/images/html_checker.png)]
 
-  <br>
 
 ### CSS Validation
  CSS validation was carried out using [W3C CSS Validator Checker](https://jigsaw.w3.org/css-validator/).
   [![W3C CSS Validator Checker](assets/images/css_checker.png)]
 
-  <br>
 
 ### JavaScript Validation
  JavaCript validation was carried out using [jshint](https://jshint.com/)
   [![JavaScript validation with jshint](assets/images/jshint.png)]
 
-  <br>
 
 ### Python Validation
   Python testing was carried out with pep8 in GitPod IDE and [CI Python Linter](https://pep8ci.herokuapp.com/).
@@ -155,10 +170,9 @@
   
   </details> 
   
+  ## Bugs
+  ___
 
-
-  To test 
-  ### HTML, CSS and Python validation
-  ### Lighthouse
-  ### W3C Validation 
-  ### Python Validation
+  While testing the comment feature in recipie_content.html, adding one comment to a recipie, I noticed the
+  comment counter for this recipie had increased with 10 comments despite only one comment being submitted and awaiting admin approval. On the '/admin' page I confirmed 10 comments awaiting approval.
+  No changes to the django code was performed in around the time of this issue and I was not able to reproduce the issue. Potentially this may have been linked to ongoing issues with the Wifi network, to which the computer running the cloud based IDE (GitPod) was connected. 
