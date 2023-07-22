@@ -11,24 +11,16 @@
     - [Add Recipie](#add-recipie)
     - [Login](#login)
     - [Register](#register)
-  - Database design
 
 - [Agile Methodology](#agile-methodology)
 
 - [Technologies](#technologies) 
-  - Languages
-   -  
+  - [Languages](#languages)
+  - [Frameworks, Hosting Services and IDEs](#frameworks-hosting-services-and-ides)
+
 - [Features](#features)
 
 - [Testing, Validation and Performance](#testing-validation-and-performance)
-
-- [Validation and Performance](#validation-and-performance)
-  - [HTML, CSS and Python validation](#html-css-and-python-validation)
-    - [Lighthouse](#lighthouse)
-    - [W3C Validation](#w3c-validation)
-    - [Python Validation](#python-validation)
-
-- [Bugs](#bugs)
 
 - [Deployment](#deployment)
   - [Elephant SQL](#elephant-sql)
@@ -36,7 +28,7 @@
   - [Heroku](#heroku) 
   - [Forking with GitHub](#forking-with-github)
   - [Cloning with GitHub](#cloning-with-github)
-- Fourth Item
+
 - [Credits](#credits)
   - [Django logo, classes](#django-logo-classes)
   - [Image Credits](#image-credits)
@@ -45,8 +37,8 @@
 
 ## Django Bakery Introduction
 Django bakery is a website for lovers of baked goods to share their recipies and leave feedback to other contributors.
-With a registered account users can like, submit, edit and delete posts. 
-The live website can be accessed here <link>
+With a registered account users can add, comment, like, edit and delete recipies. 
+The live website can be accessed here [Django Bakery](https://django-baker-862762494240.herokuapp.com/).
 
 ## UX
 ### Agile Methodology
@@ -59,13 +51,19 @@ The live website can be accessed here <link>
   #### Home
 ![Home overview](assets/images/wireframe_django_home.png)
 
+  #### View Recipie
+![View recipie](assets/images/wireframes_view_recipie.png)
+
   #### Add Recipie
 ![Add recipie](assets/images/wireframe_add_recipie.png)
+
+  #### Update Recipie
+![Add recipie](assets/images/wireframe_update.png)
 
   #### Login
 ![Add recipie](assets/images/wireframe_login.png)
 
-#### Register
+  #### Register
 ![Add recipie](assets/images/wireframe_login.png)
 
 ## User Stories
@@ -160,12 +158,31 @@ The live website can be accessed here <link>
 
   ![Screenshot of Login page](assets/images/features_sign_out.png)
 
-  
-
 
 ## Testing, Validation and Performance
 
 Please refer to helper document [TEST_VALIDATION.md](TEST_VALIDATION.md).
+
+## Technologies
+
+  ### Languages
+  - HTML - Hyper Text Markup Language (HTML) for document design display on web servers.
+  - CSS - Cascading Style Sheet (css) for styling of documents written in HTML.
+  - JavaScript - Scripting language for dynamically control content on a website.
+  - Python - General purpose language providing logic to websites created with Django.
+
+  ### Frameworks, Hosting Services and IDEs
+  - Django - Python web framework
+  - Django Crispy Forms - Python package to style Django forms
+  - Git - Tool for source code management
+  - GitHub - Cloud based code hosting platform
+  - GitPod - Cloud based IDE
+  - Heroku - Cloud based platform for deployment of apps
+  - ElephantSQL - PostgreSQL database hosting service
+  - Cloudinary - Cloud based image and video management solution
+  - Gunicorn - Python Web Server WSGI HTTP server
+  - Google Fonts - Font source library to import font styles
+
 
 ## Deployment
 

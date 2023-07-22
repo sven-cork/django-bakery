@@ -11,6 +11,8 @@
             <p>To adjust your recipie, please fill in below:</p>
         </div>
     </div>
+
+    <!-- Begin message display -->
     {% if messages %}
     <div class="container">
         {% for message in messages %}
@@ -21,6 +23,8 @@
         {% endfor %}  
     </div>
     {% endif %}
+    <!-- End message display -->
+
     <div class="row">
         <div class="col-md-8 mt-3 offset-md-2">
             <!-- Recipie update form -->

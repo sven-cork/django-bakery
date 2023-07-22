@@ -1,6 +1,9 @@
 [Go back README.md](README.md)
 
 # Testing, Validation and Performance
+
+## Table of contents
+
 - [Manual Testing](#manual-testing)
 
 - [Browser Compatibility](#browser-compatibility)
@@ -55,12 +58,13 @@
   
 
 ## Browser and Device Compatibility
-  For the devices listed below, the following Django Bakery features were tested using Chrome Developer Tools: login user, open recipie, update recipie, like recipie, delete recipie, register user:
+  The following Django Bakery features were tested using Chrome Developer Tools for the devices listed in the table below: login user, open recipie, update recipie, like recipie, delete recipie, register user.
 
   | Device | Functionality for the following pages: Home, Add Recipie, Login, Logut, Register | Screenshot | Pass/Fail |
   |--------|-----------|---------|----|
   | MacBook Pro M1 13"    | All functionality works as expected | [![MacBook Pro 13"](assets/images/macbookpro_safari.png)]  | Pass |
-  | iPhone 12 Pro | All functionality works as expected | [![iPad Air](assets/images/ipadair.png)]  | Pass |
+  | iPad Air | All functionality works as expected | [![iPad Air](assets/images/ipadair.png)]  | Pass |
+  | iPhone 12 Pro | All functionality works as expected | [![iPhone 12 Pro](assets/images/iphone12pro.png)]  | Pass |
   | Samsung Galaxy S8+ | All functionality works as expected | [![Samsung Galaxy S8+](assets/images/galaxys8.png)]  | Pass |
   
 
@@ -160,14 +164,13 @@ Browser compatibility was tested manually for Chrome, Safari and Firefox using a
 
 
 ### JavaScript Validation
- JavaCript validation was carried out using [jshint](https://jshint.com/)
+ JavaCript validation was carried out using [jshint](https://jshint.com/).
   [![JavaScript validation with jshint](assets/images/jshint.png)]
 
 
 ### Python Validation
-  Python testing was carried out with pep8 in GitPod IDE and [CI Python Linter](https://pep8ci.herokuapp.com/).
-  No errors reported however several notifications of lines being too long. From researching previous student project work
-  it is my understanding that this does not indicate invalid code, however a preference of style. 
+  Python testing was carried out using pep8 in GitPod IDE and [CI Python Linter](https://pep8ci.herokuapp.com/).
+  No errors reported however several notifications of lines being too long. From researching previous student project work, it is my understanding that this does not indicate invalid code, however a preference of style. 
 
   <details>
   <summary>Python Validation</summary>
@@ -186,6 +189,8 @@ Browser compatibility was tested manually for Chrome, Safari and Firefox using a
   ## Bugs
   ___
 
-  While testing the comment feature in recipie_content.html, adding one comment to a recipie, I noticed the
+  - While testing the comment feature in recipie_content.html, adding one comment to a recipie, I noticed the
   comment counter for this recipie had increased with 10 comments despite only one comment being submitted and awaiting admin approval. On the '/admin' page I confirmed 10 comments awaiting approval.
   No changes to the django code was performed in around the time of this issue and I was not able to reproduce the issue. Potentially this may have been linked to ongoing issues with the Wifi network, to which the computer running the cloud based IDE (GitPod) was connected. 
+ 
+  - Comment confirmation after submitting recipie comment ("Your comment is awaiting approval"), stopped working for unknown reason.

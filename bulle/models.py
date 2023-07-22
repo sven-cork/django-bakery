@@ -17,7 +17,7 @@ class Recipies(models.Model):
         'or': 'Other'
     }
 
-    # The structure of list "bake_category" was borrowed from: 
+    # The idea of list "bake_category" was borrowed from: 
     # https://github.com/tony-albanese/ci-project-4/blob/main/shelf/models.py
     bake_category = [
         ('ci_bu', 'Cinnamon Bun'),
@@ -39,7 +39,7 @@ class Recipies(models.Model):
         ('tr_le', 'Trifle'),
     ]
 
-    # The structure of dictionary "bake_category_cover" was borrowed from: 
+    # The idea of dictionary "bake_category_cover" was borrowed from: 
     # https://github.com/tony-albanese/ci-project-4/blob/main/shelf/models.py
     bake_category_cover = {
         'ci_bu': 'https://res.cloudinary.com/dwxoyt0qz/image/upload/v1687876511/cinnamon_bun_pid0xd.jpg',
