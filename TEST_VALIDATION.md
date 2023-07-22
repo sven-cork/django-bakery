@@ -40,7 +40,7 @@
 
   ### Add Recipie Page
   ___
-  
+
   | Action | Expected Behaviour | Pass/Fail |
   |--------|--------------------|-----------|
   | Add title | Title rendered when viewing recipie details | Pass |
@@ -203,4 +203,4 @@ Browser compatibility was tested manually for Chrome, Safari and Firefox using a
   comment counter for this recipie had increased with 10 comments despite only one comment being submitted and awaiting admin approval. On the '/admin' page I confirmed 10 comments awaiting approval.
   No changes to the django code was performed in around the time of this issue and I was not able to reproduce the issue. Potentially this may have been linked to ongoing issues with the Wifi network, to which the computer running the cloud based IDE (GitPod) was connected. 
  
-  - Comment confirmation after submitting recipie comment ("Your comment is awaiting approval"), stopped working for unknown reason.
+  
