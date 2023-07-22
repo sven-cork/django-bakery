@@ -39,6 +39,8 @@
   | Select a recipie to read content | Renders the recipie selected | Pass |
 
   ### Add Recipie Page
+  ___
+  
   | Action | Expected Behaviour | Pass/Fail |
   |--------|--------------------|-----------|
   | Add title | Title rendered when viewing recipie details | Pass |
