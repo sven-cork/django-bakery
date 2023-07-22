@@ -46,6 +46,11 @@ def recipie_detail(request, slug):
             comment = comment_form.save(commit=False)
             comment.recipie = recipie
             comment.save()
+
+            commented = True
+
+            messages.info(request, 'Comment submitted successfully and awaiting admin approval')
+
             return HttpResponseRedirect(reverse("recipies_content", kwargs={"slug": slug}))
 
     else:

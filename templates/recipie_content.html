@@ -36,7 +36,7 @@
                     </div>
                     <!-- The post content goes inside the card-text. -->
                     {% if recipie.get_allergy_display == "Other"%}
-                    <p id="allergy-none" id="allergy-warning">No allergy data</p>
+                    <p id="allergy-none">No allergy data</p>
 
                     {% else %}
                     <p id="allergy-warning">{{ recipie.get_allergy_display }}</p>

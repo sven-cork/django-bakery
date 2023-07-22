@@ -55,18 +55,23 @@
   
 
 ## Browser and Device Compatibility
-  All features of Django website (adding, updating, deleting recipie; register user, login) for a number of web browsers were tested for following Django Bakery website pages: Home, Add Recipie, Login, Logout, Register. The following devices: MacBook, iPhone 12 Pro, iPad Air were used was per the table below
+  For the devices listed below, the following Django Bakery features were tested using Chrome Developer Tools: login user, open recipie, update recipie, like recipie, delete recipie, register user:
 
-  | Device | Browsers | Functionality for the following pages: Home, Add Recipie, Login, Logut, Register | Screenshot | Pass/Fail |
-  |--------|--------------------|-----------|---------|----|
-  | MacBook Pro M1 13"    | Chrome, Safari, Firefox | All functionality works as expected | [![MacBook Pro 13"](assets/images/macbookpro_safari.png)]  | Pass |
-  | iPhone 8 Plus   | Chrome, Safari, Firefox | All functionality works as expected | [![MacBook Pro 13"](assets/images/macbookpro_safari.png)]  | Pass |
+  | Device | Functionality for the following pages: Home, Add Recipie, Login, Logut, Register | Screenshot | Pass/Fail |
+  |--------|-----------|---------|----|
+  | MacBook Pro M1 13"    | All functionality works as expected | [![MacBook Pro 13"](assets/images/macbookpro_safari.png)]  | Pass |
+  | iPhone 12 Pro | All functionality works as expected | [![iPad Air](assets/images/ipadair.png)]  | Pass |
+  | Samsung Galaxy S8+ | All functionality works as expected | [![Samsung Galaxy S8+](assets/images/galaxys8.png)]  | Pass |
   
 
 ## Browser Compatibility
-| Device | Functionality for the following pages: Home, Add Recipie, Login, Logut, Register | Pass/Fail |
+Browser compatibility was tested manually for Chrome, Safari and Firefox using a MacBook Pro M1 13" as per the table below:
+
+| Browser | Functionality for the following pages: Home, Add Recipie, Login, Logut, Register | Pass/Fail |
   |--------|--------------------|-----------|
   | Chrome | All functionality works as expected | Pass |
+  | Safari | All functionality works as expected | Pass |
+  | Firefox | All functionality works as expected | Pass |
 
 ## Validation and Performance
 

@@ -165,7 +165,7 @@ The live website can be accessed here <link>
 
 ## Testing, Validation and Performance
 
-Please refer to helper document [TEST_VALIDATION.md](TEST_VALIDATION.md)
+Please refer to helper document [TEST_VALIDATION.md](TEST_VALIDATION.md).
 
 ## Deployment
 
