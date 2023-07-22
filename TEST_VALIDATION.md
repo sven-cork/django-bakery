@@ -55,6 +55,14 @@
   | Edit content | Updated ingredients rendered when viewing recipie details | Pass |
   | Edit category | Picture belonging to edited category rendered when viewing recipie details | Pass |
   | Select allergy | New allergy warning rendered when viewing recipie details | Pass |
+
+  ### Login / Register Page
+  ___
+
+  | Action | Expected Behaviour | Pass/Fail |
+  |--------|--------------------|-----------|
+  | Login with username and password | User successfully logged in to Home page | Pass |
+  | Register account | Provide username, password and confirm password. Account created | Pass |
   
 
 ## Browser and Device Compatibility
